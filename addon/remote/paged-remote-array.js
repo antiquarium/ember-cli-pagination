@@ -99,6 +99,7 @@ export default Ember.ArrayProxy.extend(PageMixin, Ember.Evented, ArrayProxyPromi
   },  
 
   totalPagesBinding: "meta.total_pages",
+  totalCountBinding: "meta.total_count",
 
   pageChanged: function() {
     this.set("promise", this.fetchContent());
